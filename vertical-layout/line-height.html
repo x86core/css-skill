@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>垂直居中</title>
+  <style>
+  .border {
+    border: 1px dotted #F00;
+  }
+
+  .box {
+    width: 30em;
+    height: 10em;
+  }
+
+  .text {
+    line-height: 2em; /* 大于 font-size */
+  }
+
+  img {
+     width: 5em;
+     height: 5em;
+     vertical-align: middle;
+  }
+
+  .img-valign {
+      line-height: 8em;
+  }
+  </style>
+</head>
+<body>
+    <h3>line-height 单行文本</h3>
+    <p>元素高(height) 和 line-height ( 通常不需要设置height,仅不能垂直居中时，设置height=line-height ) 相等时，就垂直居中了(单行)。</p>
+    <div class="box border">
+          <div class="text border">
+            这里是单行文本。请看效果。
+          </div>
+    </div>
+
+
+    <p>图片垂直居中</p>
+    <p><small>父元素设置line-height, img设置 vertical-align。</small></p>
+    <div class="box border">
+      <div class="img-valign  border">
+          <img src="small.png" alt="">
+      </div>
+    </div>
+</body>
+</html>

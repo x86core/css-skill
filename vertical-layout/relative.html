@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>垂直居中</title>
+
+  <style>
+    .box {
+      width: 30em;
+      height: 14em;
+    }
+
+    .content {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    img {
+      width: 5em;
+      height: 5em;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .border {
+      border: 1px dotted #F00;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>相对定位 + transform </h3>
+  <div class="box border">
+
+    <div class="content border">
+
+      <img src="small.png" alt="">
+
+    </div>
+  </div>
+</body>
+
+</html>

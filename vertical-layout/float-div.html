@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>垂直居中</title>
+
+  <style>
+    .border {
+      border: 1px dotted #F00;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>float</h3>
+
+  <p>float div 占据父元素高的50%， 致使占据一半的父元素。</p>
+  <p>float 脱离了正常的文档流。然后子元素，使用负margin-bottom向float区进行填充。</p>
+  <div style="height:250px;" class="border">
+    <div style="float:left; height: 50%;width: 100%; margin-bottom: -50px;"></div>
+    <div style="clear:both;height:100px;" class="border">
+    </div>
+  </div>
+
+</body>
+
+</html>

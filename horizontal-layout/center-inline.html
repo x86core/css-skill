@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>水平居中</title>
+  <style>
+    .border {
+      border: 1px dotted #F00;
+    }
+
+    .box {
+      width: 30em;
+      height: 10em;
+    }
+
+    .inline-center {
+      /* inline 元素水平居中, text-align:center */
+      display: inline-block;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>inline元素水平居中</h3>
+  <p> 父元素 text-align:center，则当前inline元素水平居中(当前元素inline)。 </p>
+
+  <div class="box border inline-center"> <!-- display: inline-block -->
+
+    <span class="border">使文字水平居中</span><!-- inline element -->
+
+  </div>
+</body>
+
+</html>

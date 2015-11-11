@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>垂直居中</title>
+
+  <style>
+    .box {
+      position: relative;
+      width: 30em;
+      height: 14em;
+    }
+
+    .wrapper:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    .wrapper {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+
+    .border {
+      border: 1px dotted #F00;
+    }
+
+    img {
+      width: 5em;
+      height: 5em;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>伪元素填充，实现垂直居中。</h3>
+  <div class="box border">
+
+    <div class="wrapper border">
+
+      <img src="small.png" alt="">
+
+    </div>
+
+  </div>
+</body>
+
+</html>

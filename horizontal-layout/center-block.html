@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>水平居中</title>
+  <style>
+    .border {
+      border: 1px dotted #F00;
+    }
+
+    .box {
+      width: 30em;
+      height: 10em;
+    }
+
+    .block-center {
+      width: 40%;
+      height: 100%;
+      margin: 0 auto;
+      /* left, right auto使block元素居中*/
+    }
+  </style>
+</head>
+
+<body>
+  <h3>block 元素水平居中</h3>
+  <p>{ margin-left: auto; margin-right: auto; }时水平居中</p>
+  <div class="box border">
+    <!-- block element -->
+    <div class="block-center border">
+    </div>
+  </div>
+</body>
+
+</html>
