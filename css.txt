@@ -1,0 +1,37 @@
+
+
+absolute:包裹与破坏,没有实际宽高.(宽=0,高=0）
+float:包裹与破坏,没有高.(高=0）
+
+结论：
+    无定位值的absolute元素可以使用margin定位，
+    无定位值的absolute元素没有实际宽度的浮动元素。
+    无left,top 则像inline-block, 有则独立于文档流，相对于最近的relative父标签定，如果没有就相对于body定位。
+
+    浮动最根本的意义是实现文字环绕。
+    浮动是带有方位的display:inline-block。
+    浮动高度塌陷。
+
+
+    绝对定位脱离了文档流，浮动依旧在文档流中。
+    同处于文档流中的文字实体不会与浮动元素重叠， 而会与绝对定位元素重叠。
+
+display.table-cell
+ 垂直居中，等高，水平级联，匿名创建
+
+
+ line boxes ->inline boxes->content area(font size)
+
+line boxes高由最高的决定
+img 自身就是inline boxes, float会破坏inline
+inline boxes 高直接受line-height控制
+
+line boxes高垂直堆叠开成containing box (div,p)
+
+
+The position property is used to define whether a box is absolute, relative, static or fixed:
+
+static is the default value and renders a box in the normal order of things, as they appear in the HTML.
+relative is much like static but the box can be offset from its original position with the properties top, right, bottom and left.
+absolute pulls a box out of the normal flow of the HTML and delivers it to a world all of its own. In this crazy little world, the absolute box can be placed anywhere on the page using top, right, bottom and left.
+fixed behaves like absolute, but it will absolutely position a box in reference to the browser window as opposed to the web page, so fixed boxes should stay exactly where they are on the screen even when the page is scrolled.
